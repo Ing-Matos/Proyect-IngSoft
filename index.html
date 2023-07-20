@@ -1,13 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caper Eventos</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maquetado</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <a href="#">LOGO</a>
+      <label for="toggler">
+        <i class="fa fa-bars"></i>
+      </label>
+      <input type="checkbox" id="toggler" name="" />
+      <div class="menu">
+        <ul class="list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Galería</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Acerca de nosotros</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio">
+      <div class="container">
+        <div class="video-container">
+          <!-- Aquí iría el código para insertar el video representativo -->
+        </div>
+        <h1>Eventos Caper</h1>
+        <p>Bienvenidos a Eventos Caper, donde creamos momentos inolvidables.</p>
+        <a href="#contacto" class="btn-reserva">Reservar</a>
+      </div>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section id="productos">
+      <div class="container">
+        <h2>Productos y Servicios</h2>
+        <ul>
+          <li>Producto 1</li>
+          <li>Producto 2</li>
+          <li>Producto 3</li>
+          <!-- Agregar más productos aquí -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- Sección Acerca de Nosotros -->
+    <section id="acerca">
+      <div class="container">
+        <h2>Acerca de Nosotros</h2>
+        <p>En nuestra empresa, nos enorgullecemos de...</p>
+      </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+      <div class="container">
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+          <label for="nombre" class="formu">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="email" class="formu">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensaje" class="formu">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+      <div class="container">
+        <p>Derechos Reservados &copy; 2023 | Eventos Caper</p>
+      </div>
+    </footer>
+
     <script type="module" src="JS\app.js"></script>
-</body>
+  </body>
 </html>
