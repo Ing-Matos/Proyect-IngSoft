@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maquetado</title>
     <link rel="stylesheet" href="/CSS/style.css" />
+    <!-- Bootstrap v5.3.1 -->
+    <link rel="stylesheet" href="/CSS/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -15,20 +17,23 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav>
-      <a href="#">LOGO</a>
-      <label for="toggler">
-        <i class="fa fa-bars"></i>
-      </label>
-      <input type="checkbox" id="toggler" name="" />
-      <div class="menu">
-        <ul class="list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Galería</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li><a href="#">Acerca de nosotros</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="Img\Logo_EC.png" alt="" width="90" height="80">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link" aria-current="page" href="#productos">Servicios</a>
+            <a class="nav-link" aria-current="page" href="#">Galería</a>
+            <a class="nav-link" aria-current="page" href="#">Contacto</a>
+            <a class="nav-link" aria-current="page" href="#">Acerca de nosotros</a>
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -46,14 +51,41 @@
 
     <!-- Sección de Productos -->
     <section id="productos">
-      <div class="container">
-        <h2>Productos y Servicios</h2>
-        <ul>
-          <li>Producto 1</li>
-          <li>Producto 2</li>
-          <li>Producto 3</li>
-          <!-- Agregar más productos aquí -->
-        </ul>
+      <div class="" >
+        <h2 style="text-align: center;">Productos y Servicios</h2>
+        <br>
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="image-container">
+                  <img src="Img\Productos1.jpg" alt="...">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="image-container">
+                  <img src="Img\Productos2.jpg" alt="...">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="image-container">
+                  <img src="Img\Productos3.jpg" alt="...">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="image-container">
+                  <img src="Img\Productos4.jpg" alt="...">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev" >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next" >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
       </div>
     </section>
 
@@ -92,5 +124,9 @@
     </footer>
 
     <script type="module" src="JS\app.js"></script>
+    <!-- Bootstrap v5.3.1 -->
+    <script src="/JS/js/bootstrap.bundle.min.js"></script>
+    <!-- Jquery v3.60 -->
+    <script src="/JS/jquery-3.6.0.min.js"></script>
   </body>
 </html>
