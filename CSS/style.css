@@ -39,6 +39,15 @@ nav {
     color: white;
     }
 
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+.navbar-brand{
+    margin-left: 15px;
+}
+
 /* Estilos de la sección de Inicio */
 section#inicio {
     text-align: center;
@@ -65,12 +74,16 @@ p {
     border-radius: 5px;
 }
 
-
-
 /* Estilos de la sección de Productos */
 section#productos {
-    padding: 2rem 0;
+    padding: 8rem 0;
     background-color: #fff;
+}
+
+/* Estilos de la sección de galeria */
+section#galeria {
+    padding: 2rem 0;
+    background-color: #f2f2f2;
 }
 
 #carouselExampleAutoplaying {
@@ -148,13 +161,13 @@ h2 {
 /* Estilos de la sección Acerca de Nosotros */
 section#acerca {
     padding: 8rem 0;
-    background-color: #f2f2f2;
+    background-color: #fff;
 }
 
 /* Estilos de la sección de Contacto */
 section#contacto {
     padding: 8rem 0;
-    background-color: #fff;
+    background-color: #f2f2f2;
 }
 
 form {
