@@ -68,39 +68,64 @@
       <div class="" >
         <h2 style="text-align: center;">Galería de Eventos</h2>
         <br>
-          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="container-fluid">
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicadores de posición -->
+            <ol class="carousel-indicators">
+              <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="5"></li>
+            </ol>
+        
+            <!-- Slides del carrusel -->
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="image-container">
-                  <img src="Img\Productos1.jpg" alt="...">
-                </div>
+                <img src="Img\galeria\Galeria1.jpg" alt="Evento 1" class="d-block w-100" style="border-radius: 3px;">
               </div>
               <div class="carousel-item">
-                <div class="image-container">
-                  <img src="Img\Productos2.jpg" alt="...">
-                </div>
+                <img src="Img\galeria\Galeria2.jpg" alt="Evento 2" class="d-block w-100" style="border-radius: 3px;">
               </div>
               <div class="carousel-item">
-                <div class="image-container">
-                  <img src="Img\Productos3.jpg" alt="...">
-                </div>
+                <img src="Img\galeria\Galeria3.jpg" alt="Evento 3" class="d-block w-100" style="border-radius: 3px;">
               </div>
               <div class="carousel-item">
-                <div class="image-container">
-                  <img src="Img\Productos4.jpg" alt="...">
-                </div>
+                <img src="Img\galeria\Galeria4.jpg" alt="Evento 4" class="d-block w-100" style="border-radius: 3px;">
+              </div>
+              <div class="carousel-item">
+                <img src="Img\galeria\Galeria5.jpg" alt="Evento 5" class="d-block w-100" style="border-radius: 3px;">
+              </div>
+              <div class="carousel-item">
+                <img src="Img\galeria\Galeria6.jpg" alt="Evento 6" class="d-block w-100" style="border-radius: 3px;">
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev" >
+        
+            <!-- Flechas de navegación -->
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next" >
+              <span class="visually-hidden">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+              <span class="visually-hidden">Siguiente</span>
+            </a>
           </div>
+        </div>
       </div>
+
+      <!-- Modal para mostrar la imagen ampliada -->
+      <div id="imagenModal" class="modal fade" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <img src="" alt="" class="d-block mx-auto w-100" style="border-radius: 3px;" id="imagenAmpliada">
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <!-- Sección Acerca de Nosotros -->
