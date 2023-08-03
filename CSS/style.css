@@ -4,13 +4,83 @@ body {
     margin: 0;
     padding: 0;
 }
+.title{
+    padding-bottom: 24px;
+    padding-left: 38%;
+
+}
+
 
 .container {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    
+    
 }
+.contedor{
+    display: flex;
+    text-align: center;
+    width: 95%;
+   
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    text-align: center;
+    padding: 3%;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+.card{
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    background-color: #fff;
+    cursor: default;
+    transition: all 700ms ease;
+}
+
+.card:hover{
+    background-color: #FCC422;
+    border-radius: 2%;
+  
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: 190px;
+    border-radius: 10%;
+}
+
+.card .descripcion{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .descripcion p{
+    line-height: 1.5;
+    color: #000000;
+}
+.card .descripcion h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: purple;
+    font-size: x-large;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    
+}
+
+
+
+.card .descripcion a:hover{
+    background: #2fb4cc;
+    color: #fff;
+}
+
+
+
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -19,11 +89,11 @@ nav {
     font-size: 18px;
     font-family: sans-serif;
     padding: 15px;
-    background: gray;
+    background: rgb(255, 255, 255);
     }
     nav a {
     text-decoration: none;
-    color: white;
+    color: grey;
     }
     .list{
         display: flex;
@@ -39,12 +109,23 @@ nav {
     color: white;
     }
 
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+.navbar-brand{
+    margin-left: 15px;
+}
+
 /* Estilos de la sección de Inicio */
 section#inicio {
     text-align: center;
     padding: 8rem 0;
     background-color: #f2f2f2;
 }
+
+
 
 h1 {
     font-size: 2.5rem;
@@ -71,6 +152,37 @@ section#productos {
     background-color: #fff;
 }
 
+/* Estilos de la sección de galeria */
+section#galeria {
+    padding: 2rem 0;
+    background-color: #f2f2f2;
+}
+
+#myCarousel {
+    max-width: 100%; /* Ajustar el carrusel al ancho disponible */
+    max-height: 670px; /* Tamaño máximo deseado para el carrusel */
+    overflow: hidden; /* Evitar que el carrusel se desborde */
+}
+
+    /* Establecer el ancho del carrusel para las imágenes */
+    #myCarousel .carousel-item img {
+      width: 100%; /* Ajustar la imagen al ancho del carrusel */
+      height: auto; /* Altura automática para mantener la proporción */
+      max-height: 570px; /* Altura máxima de la imagen */
+      object-fit: cover; /* Ajustar la imagen al tamaño del contenedor sin deformarla */
+    }
+
+    /* Estilo para el botón de navegación */
+    .carousel-control-prev,
+    .carousel-control-next {
+      top: 40%; /* Ajustar la posición vertical del botón */
+    }
+
+    /* Indicadores de posición (puntos) */
+    .carousel-indicators {
+      bottom: 20px; /* Ajustar la posición vertical de los indicadores */
+    }
+
 h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -79,13 +191,66 @@ h2 {
 /* Estilos de la sección Acerca de Nosotros */
 section#acerca {
     padding: 8rem 0;
-    background-color: #f2f2f2;
+    background-color: #fff;
+}
+
+.p-AcercaNosotrosTitulo {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #bda633;
+}
+
+.p-AcercaNosotros1 {
+    font-size: 2.7rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.p-AcercaNosotros1 span {
+    color: #bda633;
+}
+
+.p-AcercaNosotros2 {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.img-ceo-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+.img-ceo-container1 {
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.img-ceo-container2 {
+    display: flex;
+    align-items: center;
+}
+
+.img-ceo {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+
+.info-ceo-container p {
+    padding-left: 2.5rem;
+}
+
+.ceo-name {
+    font-weight: bold;
 }
 
 /* Estilos de la sección de Contacto */
 section#contacto {
     padding: 8rem 0;
-    background-color: #fff;
+    background-color: #f2f2f2;
 }
 
 form {
