@@ -61,6 +61,8 @@ body {
 .card .descripcion p{
     line-height: 1.5;
     color: #000000;
+
+
 }
 .card .descripcion h3{
     font-weight: 400;
@@ -78,6 +80,7 @@ body {
     background: #2fb4cc;
     color: #fff;
 }
+
 
 
 
@@ -123,7 +126,20 @@ section#inicio {
     text-align: center;
     padding: 8rem 0;
     background-color: #f2f2f2;
+    min-height: 100vh;
+    position: relative;
 }
+
+/* Configuracion para el video*/
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 
 
@@ -132,14 +148,27 @@ h1 {
     margin-bottom: 1rem;
 }
 
-p {
-    font-size: 1.2rem;
+
+/* Estilo del texto inicial de la web*/
+.ph1 {
+    font-size: 10rem;
+    color: darkgoldenrod;
+}
+
+.pinicio {
+    font-size: 5rem;
     margin-bottom: 2rem;
+    color: aliceblue;
+}
+
+.container-start {
+    position: relative;
+    z-index: 2;
 }
 
 .btn-reserva {
     display: inline-block;
-    background-color: #333;
+    background-color: darkgoldenrod;
     color: #fff;
     padding: 0.5rem 1rem;
     text-decoration: none;
