@@ -4,13 +4,83 @@ body {
     margin: 0;
     padding: 0;
 }
+.title{
+    padding-bottom: 24px;
+    padding-left: 38%;
+
+}
+
 
 .container {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    
+    
 }
+.contedor{
+    display: flex;
+    text-align: center;
+    width: 95%;
+   
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    text-align: center;
+    padding: 3%;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+.card{
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    background-color: #fff;
+    cursor: default;
+    transition: all 700ms ease;
+}
+
+.card:hover{
+    background-color: #FCC422;
+    border-radius: 2%;
+  
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: 190px;
+    border-radius: 10%;
+}
+
+.card .descripcion{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .descripcion p{
+    line-height: 1.5;
+    color: #000000;
+}
+.card .descripcion h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: purple;
+    font-size: x-large;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    
+}
+
+
+
+.card .descripcion a:hover{
+    background: #2fb4cc;
+    color: #fff;
+}
+
+
+
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -76,6 +146,8 @@ video {
     background: #1c1c1d;
     opacity: 0.5;
 }
+
+
 
 h1 {
     font-size: 2.5rem;
@@ -155,6 +227,59 @@ h2 {
 section#acerca {
     padding: 8rem 0;
     background-color: #fff;
+}
+
+.p-AcercaNosotrosTitulo {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #bda633;
+}
+
+.p-AcercaNosotros1 {
+    font-size: 2.7rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.p-AcercaNosotros1 span {
+    color: #bda633;
+}
+
+.p-AcercaNosotros2 {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.img-ceo-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+.img-ceo-container1 {
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.img-ceo-container2 {
+    display: flex;
+    align-items: center;
+}
+
+.img-ceo {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+
+.info-ceo-container p {
+    padding-left: 2.5rem;
+}
+
+.ceo-name {
+    font-weight: bold;
 }
 
 /* Estilos de la sección de Contacto */
