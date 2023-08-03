@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maquetado</title>
     <link rel="stylesheet" href="/CSS/style.css" />
+    <!-- Bootstrap v5.3.1 -->
+    <link rel="stylesheet" href="/CSS/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -15,20 +17,23 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav>
-      <a href="#">LOGO</a>
-      <label for="toggler">
-        <i class="fa fa-bars"></i>
-      </label>
-      <input type="checkbox" id="toggler" name="" />
-      <div class="menu">
-        <ul class="list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Galería</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li><a href="#">Acerca de nosotros</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="Img\Logo_EC.png" alt="" width="90" height="80">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link" aria-current="page" href="#inicio">Home</a>
+            <a class="nav-link" aria-current="page" href="#productos">Servicios</a>
+            <a class="nav-link" aria-current="page" href="#galeria">Galería</a>
+            <a class="nav-link" aria-current="page" href="#acerca">Acerca de nosotros</a>
+            <a class="nav-link" aria-current="page" href="#contacto">Contacto</a>
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -45,16 +50,125 @@
     </section>
 
     <!-- Sección de Productos -->
+
     <section id="productos">
-      <div class="container">
-        <h2>Productos y Servicios</h2>
-        <ul>
-          <li>Producto 1</li>
-          <li>Producto 2</li>
-          <li>Producto 3</li>
-          <!-- Agregar más productos aquí -->
-        </ul>
+      <h2 class="title">Productos y Servicios</h2>
+      <div class="contedor">
+        <!-- Primer servicio -->
+        <div class="card">
+          <figure><img src="Img/boda 2.png" width: 10% ="" /></figure>
+          <div class="descripcion">
+            <h3>Bodas</h3>
+            <p>
+              Esta sección está dedicada a la planificación y organización de
+              una amplia gama de celebraciones sociales. Desde bodas
+              inolvidables y cumpleaños emocionantes hasta fiestas de
+              aniversario llenas de amor.
+            </p>
+            <a href="#contacto" class="btn-reserva">Reservar</a>
+          </div>
+        </div>
+
+        <!-- Segundo Servicio -->
+        <div class="card">
+          <figure>
+            <img src="Img/graduacion.png" />
+          </figure>
+          <div class="descripcion">
+            <h3>Graduaciones</h3>
+            <p>
+              Nuestras graduaciones son eventos significativos en la vida de los
+              graduados y sus familias. Nos enorgullecemos de organizar
+              ceremonias y fiestas de graduación que conmemoran los logros
+              académicos de manera especial y emotiva.
+            </p>
+            <a href="#contacto" class="btn-reserva">Reservar</a>
+          </div>
+        </div>
+
+        <!-- Tercer Servicio -->
+        <div class="card">
+          <figure>
+            <img src="Img/bizco.png" alt="" />
+          </figure>
+          <div class="descripcion">
+            <h3>Festividades y reuniones familiares</h3>
+            <p>
+              Somos especialistas en la organización de festividades y reuniones
+              familiares que fortalecen los lazos y crean recuerdos duraderos.
+              Ofrecemos servicios de catering y planificación para cenas y
+              comidas familiares, donde cuidamos cada detalle para hacer que
+              cada reunión sea un éxito.
+            </p>
+            <a href="#contacto" class="btn-reserva">Reservar</a>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <!-- Sección de Galeria -->
+    <section id="galeria">
+      <div class="" >
+        <h2 style="text-align: center;">Galería de Eventos</h2>
+        <br>
+        <div class="container-fluid">
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicadores de posición -->
+            <ol class="carousel-indicators">
+              <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="5"></li>
+            </ol>
+        
+            <!-- Slides del carrusel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Img\galeria\Galeria1.jpg" alt="Evento 1" class="d-block w-100" style="border-radius: 3px;">
+              </div>
+              <div class="carousel-item">
+                <img src="Img\galeria\Galeria2.jpg" alt="Evento 2" class="d-block w-100" style="border-radius: 3px;">
+              </div>
+              <div class="carousel-item">
+                <img src="Img\galeria\Galeria3.jpg" alt="Evento 3" class="d-block w-100" style="border-radius: 3px;">
+              </div>
+              <div class="carousel-item">
+                <img src="Img\galeria\Galeria4.jpg" alt="Evento 4" class="d-block w-100" style="border-radius: 3px;">
+              </div>
+              <div class="carousel-item">
+                <img src="Img\galeria\Galeria5.jpg" alt="Evento 5" class="d-block w-100" style="border-radius: 3px;">
+              </div>
+              <div class="carousel-item">
+                <img src="Img\galeria\Galeria6.jpg" alt="Evento 6" class="d-block w-100" style="border-radius: 3px;">
+              </div>
+            </div>
+        
+            <!-- Flechas de navegación -->
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal para mostrar la imagen ampliada -->
+      <div id="imagenModal" class="modal fade" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <img src="" alt="" class="d-block mx-auto w-100" style="border-radius: 3px;" id="imagenAmpliada">
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <!-- Sección Acerca de Nosotros -->
@@ -137,5 +251,9 @@
     </footer>
 
     <script type="module" src="JS\app.js"></script>
+    <!-- Bootstrap v5.3.1 -->
+    <script src="/JS/js/bootstrap.bundle.min.js"></script>
+    <!-- Jquery v3.60 -->
+    <script src="/JS/jquery-3.6.0.min.js"></script>
   </body>
 </html>
