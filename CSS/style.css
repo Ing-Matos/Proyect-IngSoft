@@ -1,88 +1,22 @@
+/* Global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
-.title{
-    padding-bottom: 24px;
-    padding-left: 38%;
-
-}
-
 
 .container {
-    width: 80%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    
-    
 }
-.contedor{
-    display: flex;
-    text-align: center;
-    width: 95%;
-   
-    margin: 0 auto;
-    padding: 0 15px;
-    display: flex;
-    text-align: center;
-    padding: 3%;
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-}
-.card{
-    width: 100%;
-    margin: 0px;
-    overflow: hidden;
-    background-color: #fff;
-    cursor: default;
-    transition: all 700ms ease;
-}
-
-.card:hover{
-    background-color: #FCC422;
-    border-radius: 2%;
-  
-    transform: translateY(-3%);
-}
-
-.card img{
-    width: 100%;
-    height: 190px;
-    border-radius: 10%;
-}
-
-.card .descripcion{
-    padding: 15px;
-    text-align: center;
-}
-
-.card .descripcion p{
-    line-height: 1.5;
-    color: #000000;
-
-
-}
-.card .descripcion h3{
-    font-weight: 400;
-    margin-bottom: 15px;
-    color: purple;
-    font-size: x-large;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    
-}
-
-
-
-.card .descripcion a:hover{
-    background: #2fb4cc;
-    color: #fff;
-}
-
-
-
 
 nav {
     display: flex;
@@ -122,15 +56,23 @@ nav {
 }
 
 /* Estilos de la sección de Inicio */
-section#inicio {
-    text-align: center;
-    padding: 8rem 0;
-    background-color: #f2f2f2;
-    min-height: 100vh;
+
+.container-start {
     position: relative;
+    z-index: 3;
+}
+section#inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    background-color: #f2f2f2;
+    position: sticky;
 }
 
-/* Configuracion para el video*/
 video {
     position: absolute;
     top: 0;
@@ -138,18 +80,14 @@ video {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 1;
 }
-
-
-
 
 h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-
-/* Estilo del texto inicial de la web*/
 .ph1 {
     font-size: 10rem;
     color: darkgoldenrod;
@@ -161,11 +99,6 @@ h1 {
     color: aliceblue;
 }
 
-.container-start {
-    position: relative;
-    z-index: 2;
-}
-
 .btn-reserva {
     display: inline-block;
     background-color: darkgoldenrod;
@@ -175,11 +108,83 @@ h1 {
     border-radius: 5px;
 }
 
+
+
+
 /* Estilos de la sección de Productos */
 section#productos {
-    padding: 8rem 0;
+    padding: 4rem 0;
     background-color: #fff;
+    
 }
+
+.title{
+    padding-bottom: 24px;
+    text-align: center;
+}
+
+.contenedor{
+    display: flex;
+    text-align: center;
+    width: 97%;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    text-align: center;
+    padding: 3%;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+
+.card{
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    background-color: #fff;
+    cursor: default;
+    transition: all 700ms ease;
+}
+
+.card:hover{
+    background-color: #FCC422;
+    border-radius: 2%;
+  
+    transform: translateY(-3%);
+}
+
+.card img{
+    height: 190px;
+    border-radius: 10%;
+}
+
+.card .descripcion{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .descripcion p{
+    line-height: 1.5;
+    color: #000000;
+
+
+}
+.card .descripcion h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: purple;
+    font-size: x-large;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    
+}
+
+
+
+.card .descripcion a:hover{
+    background: #2fb4cc;
+    color: #fff;
+}
+
+
 
 /* Estilos de la sección de galeria */
 section#galeria {
@@ -188,28 +193,28 @@ section#galeria {
 }
 
 #myCarousel {
-    max-width: 100%; /* Ajustar el carrusel al ancho disponible */
-    max-height: 670px; /* Tamaño máximo deseado para el carrusel */
-    overflow: hidden; /* Evitar que el carrusel se desborde */
+    max-width: 100%;
+    height: 670px; 
+    overflow: hidden;
 }
 
     /* Establecer el ancho del carrusel para las imágenes */
     #myCarousel .carousel-item img {
-      width: 100%; /* Ajustar la imagen al ancho del carrusel */
-      height: auto; /* Altura automática para mantener la proporción */
-      max-height: 570px; /* Altura máxima de la imagen */
-      object-fit: cover; /* Ajustar la imagen al tamaño del contenedor sin deformarla */
+      width: 100%;
+      min-height: 500px;
+      max-height: 570px; 
+      object-fit: cover; 
     }
 
-    /* Estilo para el botón de navegación */
+   
     .carousel-control-prev,
     .carousel-control-next {
-      top: 40%; /* Ajustar la posición vertical del botón */
+      top: 40%;
     }
 
-    /* Indicadores de posición (puntos) */
+    
     .carousel-indicators {
-      bottom: 20px; /* Ajustar la posición vertical de los indicadores */
+      bottom: 20px; 
     }
 
 h2 {
@@ -372,25 +377,134 @@ button {
     font-size: 15px;
 }
 
-/* Estilos para dispositivos móviles */
-@media screen and (max-width: 768px) {
-    .menu{
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-        }
-        label{
-        display: inline-flex;
-        }
-        #toggler:checked~.menu{
-        max-height: 100%;
-        }
-        .list{
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        }
-   
+/* Responsive para tabletas */
 
-    
+@media (min-width: 820px) and (max-width: 1180px) {
+   
+    .img-ceo-container {
+        flex-direction: column; 
     }
+
+    .img-ceo-container1{
+        padding-left: 0.8rem;
+    }
+
+    .img-ceo-container1,
+    .img-ceo-container2 {
+        margin-right: 0; 
+        margin-bottom: 1.5rem; 
+    }
+
+    .img-ceo {
+        width: 100%;
+        margin: 0 auto; 
+    }
+
+    .info-ceo-container {
+        text-align: center; 
+    }
+}
+
+/* Responsive  */
+
+@media (max-width: 768px) {
+    
+    /* Responsive seccion de inicio */
+
+    section#inicio {
+        padding-bottom: 50px; 
+    }
+
+    h1 {
+        font-size: 1.8rem; 
+    }
+
+    .ph1 {
+        font-size: 6rem; 
+    }
+
+    .pinicio {
+        font-size: 3.5rem; 
+    }
+
+    .btn-reserva {
+        font-size: 1.2rem; 
+    }
+
+
+    /* Responsive seccion productos */
+
+    #productos {
+        padding: 2rem 0; 
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 2rem;
+    }
+
+    .descripcion h3 {
+        font-size: 1.5rem; 
+    }
+
+    .descripcion p {
+        font-size: 1rem; 
+    }
+
+    .btn-reserva {
+        font-size: 1rem; 
+    }
+
+    /* Responsive seccion carrusel */
+
+    #myCarousel img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Additional styling for modal image on mobile */
+    #imagenAmpliada {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    /* Responsive seccion fundadores */
+
+    .img-ceo-container {
+        flex-direction: column; 
+    }
+
+    .img-ceo-container p {
+        padding-right: 1.5rem;
+    }
+
+    .img-ceo-container1{
+        padding-left: 3rem;
+    }
+
+    .img-ceo-container1,
+    .img-ceo-container2 {
+        margin-bottom: 1.5rem; 
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .img-ceo {
+        width: 100%; 
+        max-width: 250px; 
+        margin: 0 auto; 
+        height: 100%;
+        align-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .info-ceo-container {
+        text-align: center; 
+    }
+
+}
