@@ -1,262 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maquetado</title>
-    <link rel="stylesheet" href="/CSS/style.css" />
-    <!-- Bootstrap v5.3.1 -->
-    <link rel="stylesheet" href="/CSS/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="Img\Logo_EC.png" alt="" width="90" height="80">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Caper</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="img/logo-de-eventos-caper-icono.ico">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 
-            <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
-
-            <a class="nav-link" aria-current="page" href="#productos">Servicios</a>
-            <a class="nav-link" aria-current="page" href="#galeria">Galería</a>
-            <a class="nav-link" aria-current="page" href="#acerca">Acerca de nosotros</a>
-            <a class="nav-link" aria-current="page" href="#contacto">Contacto</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Sección de Inicio -->
-    <section id="inicio">
-      <div class="container-start">
-        <h1 class="ph1">Eventos Caper</h1>
-        <p class="pinicio">Donde creamos momentos inolvidables.</p>
-        <a href="#contacto" class="btn-reserva">Reservar</a>
-      </div>
-      <video muted autoplay loop>
-        <source src="Video\Events.mp4" type="video/mp4"/>
-      </video>
-      <div class="capa"></div>
-    </section>
-
-    <!-- Sección de Productos -->
-
-    <section id="productos">
-      <h2 class="title">Productos y Servicios</h2>
-      <div class="contedor">
-        <!-- Primer servicio -->
-        <div class="card">
-          <figure><img src="Img/boda 2.png" width: 10% ="" /></figure>
-          <div class="descripcion">
-            <h3>Bodas</h3>
-            <p>
-              Esta sección está dedicada a la planificación y organización de
-              una amplia gama de celebraciones sociales. Desde bodas
-              inolvidables y cumpleaños emocionantes hasta fiestas de
-              aniversario llenas de amor.
-            </p>
-            <a href="#contacto" class="btn-reserva">Reservar</a>
-          </div>
-        </div>
-
-        <!-- Segundo Servicio -->
-        <div class="card">
-          <figure>
-            <img src="Img/graduacion.png" />
-          </figure>
-          <div class="descripcion">
-            <h3>Graduaciones</h3>
-            <p>
-              Nuestras graduaciones son eventos significativos en la vida de los
-              graduados y sus familias. Nos enorgullecemos de organizar
-              ceremonias y fiestas de graduación que conmemoran los logros
-              académicos de manera especial y emotiva.
-            </p>
-            <a href="#contacto" class="btn-reserva">Reservar</a>
-          </div>
-        </div>
-
-        <!-- Tercer Servicio -->
-        <div class="card">
-          <figure>
-            <img src="Img/bizco.png" alt="" />
-          </figure>
-          <div class="descripcion">
-            <h3>Festividades y reuniones familiares</h3>
-            <p>
-              Somos especialistas en la organización de festividades y reuniones
-              familiares que fortalecen los lazos y crean recuerdos duraderos.
-              Ofrecemos servicios de catering y planificación para cenas y
-              comidas familiares, donde cuidamos cada detalle para hacer que
-              cada reunión sea un éxito.
-            </p>
-            <a href="#contacto" class="btn-reserva">Reservar</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sección de Galeria -->
-    <section id="galeria">
-      <div class="" >
-        <h2 style="text-align: center;">Galería de Eventos</h2>
-        <br>
-        <div class="container-fluid">
-          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-            <!-- Indicadores de posición -->
-            <ol class="carousel-indicators">
-              <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-              <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-              <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-              <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
-              <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
-              <li data-bs-target="#myCarousel" data-bs-slide-to="5"></li>
-            </ol>
+</head>
+<body>
+    
+    <section class="header">
+        <video muted autoplay loop >
+            <source src="img/Video Caper Events 4k.mp4" type="video/mp4">
+        </video>
+        <!--Logo-->
+    <div class="logoImg">
+        <a href="index.html"><img src="img/logo de eventos caper.png"></a>
+    </div>
+    
+        <div class="capa"></div>
+        <!--Menú-->
         
-            <!-- Slides del carrusel -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="Img\galeria\Galeria1.jpg" alt="Evento 1" class="d-block w-100" style="border-radius: 3px;">
-              </div>
-              <div class="carousel-item">
-                <img src="Img\galeria\Galeria2.jpg" alt="Evento 2" class="d-block w-100" style="border-radius: 3px;">
-              </div>
-              <div class="carousel-item">
-                <img src="Img\galeria\Galeria3.jpg" alt="Evento 3" class="d-block w-100" style="border-radius: 3px;">
-              </div>
-              <div class="carousel-item">
-                <img src="Img\galeria\Galeria4.jpg" alt="Evento 4" class="d-block w-100" style="border-radius: 3px;">
-              </div>
-              <div class="carousel-item">
-                <img src="Img\galeria\Galeria5.jpg" alt="Evento 5" class="d-block w-100" style="border-radius: 3px;">
-              </div>
-              <div class="carousel-item">
-                <img src="Img\galeria\Galeria6.jpg" alt="Evento 6" class="d-block w-100" style="border-radius: 3px;">
-              </div>
+        <nav class="menu" id="home">
+            <ul class="navbar">
+                <li><a href="#"class="active" >Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#acerca">Acerca de nosotros</a></li>
+                <li><a href="#contact-us">Contacto</a></li>
+            </ul></nav>
+ 
+          <div class="container">
+    
+                <div class="title-box">
+                  <h1 class="title">Eventos Caper </h1>
+                  <h2>¡Donde creamos momentos inolvidables!</h2>
+                </div>
+        
+                <div class="buttons">
+                  <a href="#contact-us" class="btn btn-1" onclick="">Reservar</a>
+                </div>  
+    </section>
+
+    <section class="section-2" id="servicios">
+        <div class="row">
+            <h2 class="section-heading">
+                Nuestros Servicios
+            </h2>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper">
+                       
+                        <i class="fa-solid fa-cake-candles icon"></i>
+                        <!--<i class="fa-solid fa-graduation-cap icon"></i>-->
+                    </div>
+                    <h3>Cumpleaños</h3>
+                    <p>Hacemos cumpleaños inolvidables. Decoración temática, entretenimiento y diversión para un día especial.</p>
+                    <a href="#contact-us"><input type="submit" value="Reservar" class="btn-3"></a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-church"></i>
+                        <!--<i class="fa-solid fa-graduation-cap icon"></i>-->
+                    </div>
+                    <h3>Bodas</h3>
+                    <p>¡Celebra el amor con nosotros! Organizamos eventos de bodas inolvidables, transformando tus sueños en realidad. </p>
+                    <a href="#contact-us"><input type="submit" value="Reservar" class="btn-3"></a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-user-graduate"></i>
+                        <!--<i class="fa-solid fa-graduation-cap icon"></i>-->
+                    </div>
+                    <h3>Graduaciones</h3>
+                    <p>De la graduación a nuevas aventuras: creamos eventos que honran tus logros y celebran tu futuro.</p>
+                    <a href="#contact-us"><input type="submit" value="Reservar" class="btn-3"></a>
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-masks-theater"></i>
+                        <!--<i class="fa-solid fa-graduation-cap icon"></i>-->
+                    </div>
+                    <h3>Teatros</h3>
+                    <p>Transformamos espacios en escenarios mágicos. Nuestra especialidad radica en diseñar entornos perfectos para dar vida a producciones teatrales.</p>
+                    <a href="#contact-us"><input type="submit" value="Reservar" class="btn-3"></a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-utensils"></i>
+                        <!--<i class="fa-solid fa-graduation-cap icon"></i>-->
+                    </div>
+                    <h3>Cenas familiares</h3>
+                    <p>Comparte alegría alrededor de la mesa. Creamos cenas familiares que unen lazos mientras disfrutas de deliciosa comida en un entorno acogedor.</p>
+                    <a href="#contact-us"><input type="submit" value="Reservar" class="btn-3"></a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-baby"></i>
+                        <!--<i class="fa-solid fa-graduation-cap icon"></i>-->
+                    </div>
+                    <h3>Baby shower</h3>
+                    <p>Anticipando la bendición de la vida. Nuestros baby showers celebran con alegría la llegada próxima de tu ser querido, en un ambiente lleno de cariño y emociones compartidas.</p>
+                    <a href="#contact-us"><input type="submit" value="Reservar" class="btn-3"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="gallery" id="gallery">
+        <h2 class="section-heading-1">
+            Galería
+        </h2>
+        <div class="gallery-container">
+            <img class="gallery-item gallery-item-1"  src="img/boda caper.jpg" alt="">
+            <img class="gallery-item gallery-item-2" src="img/cena elegante caper.jpg" alt="">
+            <img class="gallery-item gallery-item-3" src="img/Cumple caper.jpg" alt="">
+            <img class="gallery-item gallery-item-4" src="img/cumple de bebe caper.jpg" alt="">
+            <img class="gallery-item gallery-item-5" src="img/mesa de boda caper.jpg" alt="">
+           </div>
+        <div class="gallery-controls"></div>
+       </div>
+<!-- Sección Acerca de Nosotros -->
+<section id="acerca">
+    <div class="container">
+        <h2 class="section-heading-1">
+            Acerca de nosotros
+        </h2>
+  
+      <p class="p-AcercaNosotros1">
+        Nuestra prioridad es brindar un servicio <br /><span>excepcional</span
+        >
+        y garantizar que <br />cada evento sea un éxito
+        <span>memorable.</span>
+      </p>
+      <p class="p-AcercaNosotros2">
+        En Eventos Caper nos aseguramos que cada evento sea una experiencia
+        inolvidable y única<br />
+        para nuestros clientes, proporcionando una decoración elegante y
+        personalizada, así como <br />un montaje meticuloso y profesional.
+      </p>
+  
+      <p class="p-AcercaNosotrosTitulo">Nuestros Fundadores</p>
+  
+      <div class="img-ceo-container">
+        <div class="img-ceo-container1">
+          <img class="img-ceo" src="Img/erik-alcantara.png" />
+  
+          <div class="info-ceo-container">
+            <p class="ceo-name">Erik <span>Alcantara </span></p>
+           
+          </div>
+        </div>
+  
+        <div class="img-ceo-container2">
+          <img class="img-ceo" src="Img/marielis-ferrera.png" />
+  
+          <div class="info-ceo-container">
+            <p class="ceo-name">Marielis <span>Ferrera</span></p>
+         
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    
+  <div class="container-1">
+    <h2 class="section-heading-1" id="contact-us">
+        Contactanos
+    </h2>
+
+    <div class="item">
+
+        <div class="contact">
+
+            <div class="first-text">Formulario de contacto</div>
+            <img src="img/hombre estudiando pt2.jpg" alt="" class="image">
+            <div class="social-links">
+                <span class="second-text">Contactanos por:</span>
+                <ul class="social-media">
+                    <li><a href="https://www.facebook.com/capercomercial"><i class='bx bxl-facebook'></i></a></li>
+                    <li><a href="https://www.instagram.com/eventoscaper/"><i class='bx bxl-instagram' ></i></a></li>
+                    <li><a href="https://api.whatsapp.com/send/?phone=18498155475&text&type=phone_number&app_absent=0"><i class='bx bxs-phone'></i></a></li>
+
+                </ul>
+           
+            </div>
+            
+            </div>
+            
+            <div class="submit-form">
+                
+                <h4 class="third-text">Contactanos</h4>
+                <form action="https://formsubmit.co/Pongan su correo aqui" method="POST">
+                    <div class="input-box">
+                        <label for="">Nombre</label>
+                        <input class="input" type="text" id="nombre" name="nombre" required>
+                        
+                    </div>
+                    <div class="input-box">
+                        <label for="">Correo electronico</label>
+                        <input class="input"  type="email" id="correo" name="correo" required>
+                        
+                    
+                        <div class="input-box select-box">
+                            <label for="">Tipo de evento</label>
+                            <select id="tipoEvento" name="tipoEvento">
+                                <option value="" disabled selected>Seleccionar</option>
+                                <option value="cumpleaños">Cumpleaños</option>
+                                <option value="bodas">Bodas</option>
+                                <option value="graduaciones">Graduaciones</option>
+                                <option value="teatro">Teatro</option>
+                                <option value="babyShower">Baby Shower</option>
+                                <option value="cenasFamiliares">Cenas Familiares</option>
+                            </select>
+                        </select>
+                        
+                    </div>
+                    <div class="input-box">
+                        <label for="">Fecha de cita</label>
+                        <input class="input"  type="date" id="fecha" name="fecha" required>
+                        
+                    </div>
+                    
+                    <input type="submit" value="Enviar" class="btn-2">
+
+                </form>
             </div>
         
-            <!-- Flechas de navegación -->
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Siguiente</span>
-            </a>
-          </div>
+    </div>
+    
+  </div>
+   
+  <a href="#home"><button id="button-up"></a>
+    <i class="fa-solid fa-chevron-up"></i>
+
+</button>
+
+  <!-- Pie de Página -->
+  <footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+          <figure>
+              <a href="#">
+                <img src="img/logo de eventos caper.png" alt="Logo_EC" width="180" height="180">
+              </a>
+          </figure>           
+        </div>
+        <div class="box">
+          <h2>SOBRE NOSOTROS</h2>
+          <p>Eventos Caper, una orgnizacion donde hacemos Eventos, Cumpleaños, Bodas y Graduaciones. Contactanos y te daremos el mejor servicio.</p>
+      </div>    
+      <div class="box">
+        <h2>SIGUENOS</h2>
+        <div class="red-social">
+          <a href="https://www.facebook.com/capercomercial" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/eventoscaper/" class="fa fa-instagram"></a>
+          <h2><br>NUESTRA UBICACION</h2>
+          <p> C. 1ª 5B, Santo Domingo Este 11901</p><a href="https://goo.gl/maps/Gb7JNXmGUzPQw6kL9" class="fa-regular fa-map"></a>
         </div>
       </div>
+    </div>
+    <div class="grupo-2">
+      <small>&copy; 2023 <b>Eventos Casper</b> Todos Los Derechos Reservados</small>
+  </div>
+  </footer>
 
-      <!-- Modal para mostrar la imagen ampliada -->
-      <div id="imagenModal" class="modal fade" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-body">
-              <img src="" alt="" class="d-block mx-auto w-100" style="border-radius: 3px;" id="imagenAmpliada">
-            </div>
-          </div>
-        </div>
-      </div>
 
-    </section>
-
-    <!-- Sección Acerca de Nosotros -->
-    <section id="acerca">
-      <div class="container">
-        <p class="p-AcercaNosotrosTitulo">Acerca de Nosotros</p>
-
-        <p class="p-AcercaNosotros1">
-          Nuestra prioridad es brindar un servicio <br /><span
-            >excepcional</span
-          >
-          y garantizar que <br />cada evento sea un éxito
-          <span>memorable.</span>
-        </p>
-        <p class="p-AcercaNosotros2">
-          En Eventos Caper nos aseguramos que cada evento sea una experiencia
-          inolvidable y única<br />
-          para nuestros clientes, proporcionando una decoración elegante y
-          personalizada, así como <br />un montaje meticuloso y profesional.<br /><br />
-          Estamos emocionados de poder formar parte de momentos especiales en la
-          vida de nuestros clientes.
-        </p>
-
-        <p class="p-AcercaNosotrosTitulo">Nuestros Fundadores</p>
-
-        <div class="img-ceo-container">
-          <div class="img-ceo-container1">
-            <img class="img-ceo" src="Img/erik-alcantara.png" />
-
-            <div class="info-ceo-container">
-              <p class="ceo-name">Erik Alcántara</p>
-              <p class="ceo-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus aspernatur repudiandae rerum quo suscipit sit
-                corporis voluptates.
-              </p>
-            </div>
-          </div>
-
-          <div class="img-ceo-container2">
-            <img class="img-ceo" src="Img/marielis-ferrera.png" />
-
-            <div class="info-ceo-container">
-              <p class="ceo-name">Marielis Ferrera</p>
-              <p class="ceo-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus aspernatur repudiandae rerum quo suscipit sit
-                corporis voluptates.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sección de Contacto -->
-    <section id="contacto">
-      <div class="container">
-        <h2>Contacto</h2>
-        <form action="#" method="post">
-          <label for="nombre" class="formu">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required />
-
-          <label for="email" class="formu">Email:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="mensaje" class="formu">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" required></textarea>
-
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
-    </section>
-
-    <!-- Pie de Página -->
-    <footer>
-      <div class="container">
-        <p>Derechos Reservados &copy; 2023 | Eventos Caper</p>
-      </div>
-    </footer>
-
-    <script type="module" src="JS\app.js"></script>
-    <!-- Bootstrap v5.3.1 -->
-    <script src="/JS/js/bootstrap.bundle.min.js"></script>
-    <!-- Jquery v3.60 -->
-    <script src="/JS/jquery-3.6.0.min.js"></script>
-  </body>
+    <script src="script.js"></script>
+    </body>
 </html>
